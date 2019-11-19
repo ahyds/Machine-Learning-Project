@@ -1,5 +1,5 @@
 body {
-  font: 20px Montserrat, sans-serif;
+  font: 16px Montserrat, sans-serif;
   /* line-height: 1.8; */
   /* color: #f5f6f7; */
 }
@@ -34,7 +34,12 @@ p {font-size: 16px;}
   padding-bottom: 70px;
 }
 
-.#block4 { 
+#block4 {
+  background-color: rgb(25, 160, 165); /* Dark Green */
+  color: #ffffff;
+}
+
+#block5 { 
   background-color: #2f2f2f; /* Black Gray */
   color: #fff;
   padding-top: 70px;
@@ -53,11 +58,11 @@ body, html {
 
 .bg-image {
   /* The image used */
-  background-image: url("https://hyd123.s3.us-east-2.amazonaws.com/sound.jpg");
+  background-image: url("../image/newsound.jpg");
   
   /* Add the blur effect */
-  filter: blur(1.2px);
-  -webkit-filter: blur(1.2px);
+  filter: blur(0.5px);
+  -webkit-filter: blur(0.5px);
   
   /* Full height */
   height: 100%; 
@@ -71,7 +76,7 @@ body, html {
 /* Position text in the middle of the page/image */
 .bg-text {
   /* background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-color: rgba(0,0,0, 0.7); /* Black w/opacity/see-through */
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
