@@ -69,9 +69,39 @@ Plotly.newPlot("feature_importances", dataforbar,layout);
 //         console.log(data);
 //     });
 
-d3.csv("1990data_redo.csv").then(function(data) {
-        console.log(data[0]);
-      });
+// d3.csv("1990data_redo.csv").then(function(data) {
+//         console.log(data[0]);
+//       });
+
+d3.json("Resources/data1990.json").then((data) => {
+    //  Create the Traces
+    var trace1990 = {
+      x: data.duration_ms,
+      y: data.loudness,
+      z: data.speechiness,
+
+      mode: "markers",
+      marker: {
+        		size: 12,
+        		line: {
+        		color: 'rgba(217, 217, 217, 0.14)',
+        		width: 0.5},
+        		opacity: 0.8},
+      name: "1990",
+      type: 'scatter3d'
+      };
+    var data = [trace1990];
+    var layout_3d = {margin: {
+        l: 0,
+        r: 0,
+        b: 0,
+        t: 0
+    }};
+
+    Plotly.newPlot('3d', data, layout_3d);
+}
+)
+  
 // var trace1990 = {
 // 	x:unpack(rows, 'x1'), y: unpack(rows, 'y1'), z: unpack(rows, 'z1'),
 // 	mode: 'markers',
