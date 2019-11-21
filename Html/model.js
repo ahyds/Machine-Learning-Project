@@ -61,82 +61,33 @@ var dataforbar = [trace1];
     //plot the bar chart
 Plotly.newPlot("feature_importances", dataforbar,layout);
 
-// d3.csv("samples.json").then((data) => {
-//     // get x y values for barchart
-//     samples = data.samples;
+var trace1990={};
+Plotly.d3.csv('1990data_cleaned.csv', function(err, rows){
+  function unpack(rows, key) {
+    return rows.map(function(row)
+    { return row[key]; });}
 
-// d3.csv("https://hyd123.s3.us-east-2.amazonaws.com/updated_data/1990data_cleaned.csv", function(data) {
-//         console.log(data);
-//     });
-
-// d3.csv("1990data_redo.csv").then(function(data) {
-//         console.log(data[0]);
-//       });
-
-d3.json("Resources/data1990.json").then((data) => {
-    //  Create the Traces
-    var trace1990 = {
-      x: data.duration_ms,
-      y: data.loudness,
-      z: data.speechiness,
-
-      mode: "markers",
-      marker: {
-        		size: 12,
-        		line: {
-        		color: 'rgba(217, 217, 217, 0.14)',
-        		width: 0.5},
-        		opacity: 0.8},
-      name: "1990",
-      type: 'scatter3d'
-      };
+  var trace1990 = {
+    x:unpack(rows, 'duration_ms'), y: unpack(rows, 'loudness'), z: unpack(rows, 'speechiness'),
+    mode: 'markers',
+    marker: {
+      size: 12,
+      line: {
+      color: 'rgba(217, 217, 217, 0.14)',
+      width: 0.5},
+      opacity: 0.8},
+    type: 'scatter3d'
+    };
     var data = [trace1990];
-    var layout_3d = {margin: {
-        l: 0,
-        r: 0,
-        b: 0,
-        t: 0
-    }};
+    var layout2 = {margin: {
+      l: 0,
+      r: 0,
+      b: 0,
+      t: 0
+      }};
+    Plotly.newPlot('3d', data, layout2);
 
-    Plotly.newPlot('3d', data, layout_3d);
-}
-)
-  
-// var trace1990 = {
-// 	x:unpack(rows, 'x1'), y: unpack(rows, 'y1'), z: unpack(rows, 'z1'),
-// 	mode: 'markers',
-// 	marker: {
-// 		size: 12,
-// 		line: {
-// 		color: 'rgba(217, 217, 217, 0.14)',
-// 		width: 0.5},
-// 		opacity: 0.8},
-// 	type: 'scatter3d'
-// };
-
-// var trace2000 = {
-// 	x:unpack(rows, 'x2'), y: unpack(rows, 'y2'), z: unpack(rows, 'z2'),
-// 	mode: 'markers',
-// 	marker: {
-// 		color: 'rgb(127, 127, 127)',
-// 		size: 12,
-// 		symbol: 'circle',
-// 		line: {
-// 		color: 'rgb(204, 204, 204)',
-// 		width: 1},
-// 		opacity: 0.8},
-// 	type: 'scatter3d'};
-
-// var data = [trace1990, trace2000];
-// var layout_3d = {margin: {
-// 	l: 0,
-// 	r: 0,
-// 	b: 0,
-// 	t: 0
-//   }};
-
-// Plotly.newPlot('3d', data, layout_3d);
-
+});
 
 
 
