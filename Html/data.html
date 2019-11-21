@@ -34,12 +34,41 @@
     </div>
   </nav>
 
+<br>
 
-<!-- <div class="bg-text">
-  <h2>Proudly presents</h2>
-  <h1 style="font-size:50px">Music Project</h1>
-  <p>By Joyce, Sherry, Sherry and Zara</p>
-</div> --> 
+<div class = "container">
+  <div class = "row" style= "margin: 30px;">
+    <div class = "col-md-6">
+      <h1>Dataset and Features</h1>
+      <br>
+      <br>
+      <p>Two datasets were built to support two machine learning models. </p>
+      <br>
+      <p>First data set of 4700 songs was collected form Billboard Hot-100 Chart in years 1990, 2000, 2010,
+        and 2019, using Billboard API library 
+        <a href = "https://github.com/guoguo12/billboard-charts" target = "blank">[1]</a>. 
+        We fetched charts at the beginning of each month, resulting in 12 charts in total per year for 1990, 
+        2000, 2010; for year 2019, there were 11. 
+      </p>
+      <p>
+        Next, we searched the song titles on Spotify using a lightweight python library called Spotipy. 
+        Each song has a unique track ID on Spotify, the IDs were then used to read in audio features. 
+        Given that there were songs not available on Spotify--in other words, without a corresponding ID--
+        and songs without corresponding audio features were dropped, there are a total of 4672 songs in the 
+        final dataset. 
+      </p>
+      <br>
+      <p>
+        The other data set contained songs published by artists who are on the Spotify Top 100 Artist Charts 
+        <a href = "https://rateyourmusic.com/list/NicklasWachter/spotify-top-100-artists-chart-14_may_2019/" target = "blank">[2]</a>. 
+        The artists were selected such that they published at least one full album in the past 5 years (2015-2019), 
+        then all the songs they published were filtered so that songs which had not been ranked in the Billboard Hot-100 
+        Charts in the corresponding time frame were categorized as unpopular. Same method was used to fetch the unpopular 
+        songs audio features. 
+      </p>
+    </div>
+  </div>
+</div> 
 
 </body>
 </html>
