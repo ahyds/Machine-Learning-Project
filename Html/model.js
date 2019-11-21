@@ -22,18 +22,18 @@ var model = models_accuracy.map(function(item, index) {
 console.log(feature);
 
 var trace_summary = {
-     y: model,
-     x: accuracy,
+     x: model,
+     y: accuracy,
      type: "bar",
-     text: model,
-     orientation: "h"
+     text: model
+     //orientation: "h"
    
    };
 
 var layout_summary = {
        title: "Model Accuracy",
-       xaxis: { title: "Accuracy",tickformat: ',.2%'},
-       yaxis: { title: "Models",autorange:"reversed"},
+       xaxis: { title: "Model",},
+       yaxis: { title: "Accuracy",tickformat: ',.2%'},
        
        margin: {
          l: 100,
@@ -86,7 +86,7 @@ var trace1 = {
     };
 
 var layout = {
-        title: "Feauture Importances",
+        title: "Feauture Importances of Random Forest",
         xaxis: { title: "Weights",tickformat: ',.2%'},
         yaxis: { title: "Features",autorange:"reversed"},
         
@@ -140,7 +140,7 @@ var trace2 = {
   };
 
 var layout2 = {
-      title: "Feauture Importances",
+      title: "Feauture Importances of Decision Tree",
       xaxis: { title: "Weights",tickformat: ',.2%'},
       yaxis: { title: "Features",autorange:"reversed"},
       
