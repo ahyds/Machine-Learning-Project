@@ -58,7 +58,7 @@ body, html {
 
 .bg-image {
   /* The image used */
-  background-image: url("../image/newsound.jpg");
+  background-image: url("image/newsound.jpg");
   
   /* Add the blur effect */
   filter: blur(0.5px);
