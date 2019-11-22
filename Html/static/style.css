@@ -31,6 +31,11 @@ li {
   padding: 10px;
 }
 
+#data_page_titles {
+  color: rgb(21, 130, 167);
+  font-weight: bold;
+}
+
 /* .bg-1 { 
   background-color: #1abc9c; /* Green */
 /* color: #ffffff;
