@@ -157,75 +157,75 @@ var dataforbar2 = [trace2];
 Plotly.newPlot("feature_importances2", dataforbar2,layout2);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Primay features 3D chart 
-Plotly.d3.csv('3d_RandomForest.csv', function(err, rows){
-  function unpack(rows, key) {
-    return rows.map(function(row)
-    { return row[key]; });}
+// Plotly.d3.csv('3d_RandomForest.csv', function(err, rows){
+//   function unpack(rows, key) {
+//     return rows.map(function(row)
+//     { return row[key]; });}
 
-  var trace1990 = {
-    x:unpack(rows, 'duration_ms_1990'), y: unpack(rows, 'loudness_1990'), z: unpack(rows, 'speechiness_1990'),
-    name: '1990',
-    mode: 'markers',
+//   var trace1990 = {
+//     x:unpack(rows, 'duration_ms_1990'), y: unpack(rows, 'loudness_1990'), z: unpack(rows, 'speechiness_1990'),
+//     name: '1990',
+//     mode: 'markers',
    
-    marker: {
-      size: 5,
-      line: {
-      color: 'rgba(217, 217, 217, 0.14)',
-      width: 0.5},
-      opacity: 0.6},
-    type: 'scatter3d'
-    };
+//     marker: {
+//       size: 5,
+//       line: {
+//       color: 'rgba(217, 217, 217, 0.14)',
+//       width: 0.5},
+//       opacity: 0.6},
+//     type: 'scatter3d'
+//     };
 
-    var trace2000 = {
-      x:unpack(rows, 'duration_ms_2000'), y: unpack(rows, 'loudness_2000'), z: unpack(rows, 'speechiness_2000'),
-      name:'2000',
-      mode: 'markers',
-      marker: {
-        size: 5,
-        line: {
-        color: 'rgba(234, 18, 14, 0.14)',
-        width: 0.5},
-        opacity: 0.6},
-      type: 'scatter3d'
-      };
+//     var trace2000 = {
+//       x:unpack(rows, 'duration_ms_2000'), y: unpack(rows, 'loudness_2000'), z: unpack(rows, 'speechiness_2000'),
+//       name:'2000',
+//       mode: 'markers',
+//       marker: {
+//         size: 5,
+//         line: {
+//         color: 'rgba(234, 18, 14, 0.14)',
+//         width: 0.5},
+//         opacity: 0.6},
+//       type: 'scatter3d'
+//       };
     
-      var trace2010 = {
-        x:unpack(rows, 'duration_ms_2010'), y: unpack(rows, 'loudness_2010'), z: unpack(rows, 'speechiness_2010'),
-        mode: 'markers',
-        name:"2010",
-        marker: {
-          size: 5,
-          line: {
-          color: 'rgba(244, 248, 37, 0.14)',
-          width: 0.5},
-          opacity: 0.6},
-        type: 'scatter3d'
-        };
+//       var trace2010 = {
+//         x:unpack(rows, 'duration_ms_2010'), y: unpack(rows, 'loudness_2010'), z: unpack(rows, 'speechiness_2010'),
+//         mode: 'markers',
+//         name:"2010",
+//         marker: {
+//           size: 5,
+//           line: {
+//           color: 'rgba(244, 248, 37, 0.14)',
+//           width: 0.5},
+//           opacity: 0.6},
+//         type: 'scatter3d'
+//         };
 
-      var trace2019 = {
-          x:unpack(rows, 'duration_ms_2019'), y: unpack(rows, 'loudness_2019'), z: unpack(rows, 'speechiness_2019'),
-          mode: 'markers',
-          name:"2019",
-          marker: {
-            size: 5,
-            line: {
-            color: 'rgba(37, 248, 40, 0.14)',
-            width: 0.5},
-            opacity: 0.6},
-          type: 'scatter3d'
-          };
+//       var trace2019 = {
+//           x:unpack(rows, 'duration_ms_2019'), y: unpack(rows, 'loudness_2019'), z: unpack(rows, 'speechiness_2019'),
+//           mode: 'markers',
+//           name:"2019",
+//           marker: {
+//             size: 5,
+//             line: {
+//             color: 'rgba(37, 248, 40, 0.14)',
+//             width: 0.5},
+//             opacity: 0.6},
+//           type: 'scatter3d'
+//           };
 
-    var data = [trace1990,trace2000,trace2010,trace2019];
-    var layout2 = {margin: {
-      l: 0,
-      r: 0,
-      b: 0,
-      t: 0
-      }};
+//     var data = [trace1990,trace2000,trace2010,trace2019];
+//     var layout2 = {margin: {
+//       l: 0,
+//       r: 0,
+//       b: 0,
+//       t: 0
+//       }};
 
-    Plotly.newPlot('3d', data, layout2);
+//     Plotly.newPlot('3d', data, layout2);
 
-});
+// });
 
 
 
