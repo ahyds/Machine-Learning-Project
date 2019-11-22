@@ -30,7 +30,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="viz.html">VISUALIZATION</a></li>
-          <li><a href="model.html">MACHINE LEARNING</a></li>
+          <li><a href="models_html/models_overview.html">MACHINE LEARNING</a></li>
           <li><a href="data.html">DATA</a></li>
         </ul>
       </div>
@@ -91,11 +91,26 @@
     </div>
 
     <div class="row">
-      <div class="col-md-12">
-        
+      <div class="col-md-12" style= "margin: 20px;">
         <p>
-
-        </p>
+          Some of the audio features provided in Spotify API are listed below:</p>
+        <ul>
+          <li>Acousticness: A confidence measure of whether the track is acoustic (0.0 ~ 1.0)</li>
+          <li>Dancebility: How suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity (0.0 ~ 1.0)</li>
+          <li>Duration(ms)</li>
+          <li>Energy: Represents a perceptual measure of intensity and activity (i.e., death metal scores high, a Bach prelude scores low) (0.0 ~ 1.0) </li>
+          <li>Instrumentalness: Predicts whether a track contains no vocals (0.0 ~ 1.0); values above 0.5 are intended to represent instrumental tracks </li>
+          <li>Liveness: Detects wether the song was performed live (0.0 ~ 1.0)</li>
+          <li>Loudness: The overall loudness of a track in decibels (dB) (-60dB ~ 0dB) </li>
+          <li>Speechiness: Detects the presence of spoken words in a track (0.0 ~ 1.0)</li>
+            <ul>
+              <li> value > 0.66: tracks are probably made entirely of spoken words</li>
+              <li> 0.33 < value < 0.66: tracks may contain both music and speech</li>
+              <li> value < 0.33: represent music and other non-speech-like tracks</li>
+            </ul>
+          <li>Tempo: The overall estimated tempo of a track in beats per minute (BPM)</li>
+          <li>Valence: Describe the emotional tendencies: tracks with high valence sound more cheerful, while tracks with low valence sound more negative</li>
+        </ul>
       </div>
     </div>
   </div>
