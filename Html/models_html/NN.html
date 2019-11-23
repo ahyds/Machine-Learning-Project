@@ -45,15 +45,6 @@ div.content {
   font-size:130%;
 }
 
-/* .content img{
-  position: relative;
-  left: 0;
-  right:0;
-  top: 0;
-  height: auto;
-  size:fit-content;
-  opacity:0.3;
-} */
 
 </style>
 
@@ -77,13 +68,13 @@ div.content {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="project.html">Our Project</a>
+        <a class="navbar-brand" href="../index.html">Our Project</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="viz.html">VISUALIZATION</a></li>
-          <li><a href="model.html">MACHINE LEARNING</a></li>
-          <li><a href="data.html">DATA</a></li>
+          <li><a href="../viz.html">VISUALIZATION</a></li>
+          <li><a href="models_overview.html">MACHINE LEARNING</a></li>
+          <li><a href="../data.html">DATA</a></li>
         </ul>
       </div>
     </div>
@@ -93,9 +84,10 @@ div.content {
 
 <!-- Second Container -->
 <div class="sidebar">
-  <a class="active" href="DT.html>">Decision Tree</a>
+  <a href="models_overview.html">Models Overview</a> 
+  <a href="DT.html">Decision Tree</a>
   <a href="RF.html">Random Forest</a>
-  <a href="NN.html">Neural Network</a>
+  <a class="active" href="NN.html">Neural Network</a>
   <a href="KNN.html">K-Nearest Neighbors </a>
   <a href="GNB.html">Gaussian Naive Bayes </a>
   <a href="SVM.html">Support Vector Machines </a>
@@ -103,17 +95,13 @@ div.content {
 </div>
 
 <div class="content">
-  <!-- <div style="background-image: url('static/image/newsound.jpg');background-size:cover;"> -->
-  <!-- <img src="static/image/newsound.jpg"> -->
-  <h2>Decision Tree</h2>
+  <h2>Neural Network</h2>
   <br>
-  <p>For an initial identification of clusters in the data, we used the Decision Tree to creates a series of decision boundaries on the training set. Each boundary splits the data into two clusters (within the current cluster) at a value of a feature that minimizes the Gini loss. </p>
+  <p>Another approach in this hit predicting problem was to use a Neural Network. We used a neural network regularization, with one hidden layer of six units and the sigmoid activation function. The L2 regularization function was applied to the cost function to avoid over-fitting. </p>
   <br>
-  <p>111111111111</p>
-  <h3>PICTURE</h3>
 </div>
 
-<script src="model.js"></script>  
+<script src="..\model.js"></script>  
 
 </body>
 </html>
