@@ -17,6 +17,10 @@ h1 {
   padding: 10px;
 }
 
+h3 {
+  font-size: 25px;
+}
+
 ul {
   display: block;
   list-style-type: disc;
@@ -46,7 +50,9 @@ li {
   padding-bottom: 70px;
 }
 
-.margin {margin-bottom: 45px;}
+.margin {
+  margin-bottom: 30px;
+  font-size: 20px;}
 
 #block2 { 
   background-color: #474e5d; /* Dark Blue */
@@ -70,8 +76,8 @@ li {
 #block5 { 
   background-color: #2f2f2f; /* Black Gray */
   color: #fff;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 } 
 
 body, html {
