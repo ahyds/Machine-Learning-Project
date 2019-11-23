@@ -7,7 +7,8 @@ var models_accuracy = [[0.5820, 'Decision Tree'],
 [0.577, 'K Nearest Neighbors'],
 [0.5185, 'Gaussian Naive Bayes'],
 [0.65, 'Support Vector Machine'],
-[0.6137, 'Logistic Regression']]
+[0.6137, 'Logistic Regression'],
+[0.6253, 'Pyspark']]
 
 var accuracy = models_accuracy.map(function(item, index) {
    return ((item[0]).toFixed(4)+'%');
