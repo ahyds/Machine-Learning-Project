@@ -13,7 +13,7 @@
 
   <link rel="stylesheet" href="static/reset.css">
   <link rel="stylesheet" href="static/style.css">
-  </head>
+</head>
 <body>
 
   <!-- Navbar -->
@@ -21,9 +21,9 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <!-- <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                         -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
         </button>
         <a class="navbar-brand" href="index.html">Our Project</a>
       </div>
@@ -94,22 +94,22 @@
       <div class="col-md-12" style= "margin: 20px;">
         <p>
           Some of the audio features provided in Spotify API are listed below:</p>
-        <ul>
-          <li><strong id="data_page_titles">Acousticness:</strong> A confidence measure of whether the track is acoustic (0.0 ~ 1.0)</li>
-          <li><strong id="data_page_titles">Dancebility:</strong> How suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity (0.0 ~ 1.0)</li>
-          <li><strong id="data_page_titles">Duration(ms)</strong></li>
-          <li><strong id="data_page_titles">Energy:</strong> Represents a perceptual measure of intensity and activity (i.e., death metal scores high, a Bach prelude scores low) (0.0 ~ 1.0) </li>
-          <li><strong id="data_page_titles">Instrumentalness:</strong> Predicts whether a track contains no vocals (0.0 ~ 1.0); values above 0.5 are intended to represent instrumental tracks </li>
-          <li><strong id="data_page_titles">Liveness:</strong> Detects wether the song was performed live (0.0 ~ 1.0)</li>
-          <li><strong id="data_page_titles">Loudness:</strong> The overall loudness of a track in decibels (dB) (-60dB ~ 0dB) </li>
-          <li><strong id="data_page_titles">Speechiness:</strong> Detects the presence of spoken words in a track (0.0 ~ 1.0)</li>
-            <ul>
-              <li> value > 0.66: tracks are probably made entirely of spoken words</li>
-              <li> 0.33 < value < 0.66: tracks may contain both music and speech</li>
-              <li> value < 0.33: represent music and other non-speech-like tracks</li>
+        <ul class="data_page_ul">
+          <li id="data_page_li"><strong id="data_page_titles">Acousticness:</strong> A confidence measure of whether the track is acoustic (0.0 ~ 1.0)</li>
+          <li id="data_page_li"><strong id="data_page_titles">Dancebility:</strong> How suitable a track is for dancing based on a combination of musical elements including tempo, rhythm stability, beat strength, and overall regularity (0.0 ~ 1.0)</li>
+          <li id="data_page_li"><strong id="data_page_titles">Duration(ms)</strong></li>
+          <li id="data_page_li"><strong id="data_page_titles">Energy:</strong> Represents a perceptual measure of intensity and activity (i.e., death metal scores high, a Bach prelude scores low) (0.0 ~ 1.0) </li>
+          <li id="data_page_li"><strong id="data_page_titles">Instrumentalness:</strong> Predicts whether a track contains no vocals (0.0 ~ 1.0); values above 0.5 are intended to represent instrumental tracks </li>
+          <li id="data_page_li"><strong id="data_page_titles">Liveness:</strong> Detects wether the song was performed live (0.0 ~ 1.0)</li>
+          <li id="data_page_li"><strong id="data_page_titles">Loudness:</strong> The overall loudness of a track in decibels (dB) (-60dB ~ 0dB) </li>
+          <li id="data_page_li"><strong id="data_page_titles">Speechiness:</strong> Detects the presence of spoken words in a track (0.0 ~ 1.0)</li>
+            <ul id="data_page_ul">
+              <li id="data_page_li"> value > 0.66: tracks are probably made entirely of spoken words</li>
+              <li id="data_page_li"> 0.33 < value < 0.66: tracks may contain both music and speech</li>
+              <li id="data_page_li"> value < 0.33: represent music and other non-speech-like tracks</li>
             </ul>
-          <li><strong id="data_page_titles">Tempo:</strong> The overall estimated tempo of a track in beats per minute (BPM)</li>
-          <li><strong id="data_page_titles">Valence:</strong> Describe the emotional tendencies: tracks with high valence sound more cheerful, while tracks with low valence sound more negative</li>
+          <li id="data_page_li"><strong id="data_page_titles">Tempo:</strong> The overall estimated tempo of a track in beats per minute (BPM)</li>
+          <li id="data_page_li"><strong id="data_page_titles">Valence:</strong> Describe the emotional tendencies: tracks with high valence sound more cheerful, while tracks with low valence sound more negative</li>
         </ul>
         <p>Click <a href="https://developer.spotify.com/documentation/web-api/reference/tracks/get-several-audio-features/">
         here</a> to read the full documentation of Spotify audio features.</p>
