@@ -45,15 +45,6 @@ div.content {
   font-size:130%;
 }
 
-/* .content img{
-  position: relative;
-  left: 0;
-  right:0;
-  top: 0;
-  height: auto;
-  size:fit-content;
-  opacity:0.3;
-} */
 
 </style>
 
@@ -77,13 +68,13 @@ div.content {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="project.html">Our Project</a>
+        <a class="navbar-brand" href="../index.html">Our Project</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="viz.html">VISUALIZATION</a></li>
-          <li><a href="model.html">MACHINE LEARNING</a></li>
-          <li><a href="data.html">DATA</a></li>
+          <li><a href="../viz.html">VISUALIZATION</a></li>
+          <li><a href="models_overview.html">MACHINE LEARNING</a></li>
+          <li><a href="../data.html">DATA</a></li>
         </ul>
       </div>
     </div>
@@ -93,9 +84,10 @@ div.content {
 
 <!-- Second Container -->
 <div class="sidebar">
-  <a href="DT.html>">Decision Tree</a>
-  <a href="RF.html">Random Forest</a>
-  <a class="active" href="NN.html">Neural Network</a>
+  <a href="models_overview.html">Models Overview</a> 
+  <a href="DT.html">Decision Tree</a>
+  <a class="active" href="RF.html">Random Forest</a>
+  <a href="NN.html">Neural Network</a>
   <a href="KNN.html">K-Nearest Neighbors </a>
   <a href="GNB.html">Gaussian Naive Bayes </a>
   <a href="SVM.html">Support Vector Machines </a>
@@ -103,18 +95,22 @@ div.content {
 </div>
 
 <div class="content">
-  <!-- <div style="background-image: url('static/image/newsound.jpg');background-size:cover;"> -->
-  <!-- <img src="static/image/newsound.jpg"> -->
-  <h2>Neural Network</h2>
+  <h2>Random Forest</h2>
   <br>
-  <p>Another approach in this hit predicting problem was to use a Neural Network. We used a neural network regularization, with one hidden layer of six units and the sigmoid activation function. The L2 regularization function was applied to the cost function to avoid over-fitting. </p>
+  <p>We then used the Random forest algorithm, which consists of a large number of individual decision trees that operate as an ensemble. Each individual tree in the random forest spits out a class prediction and the class with the most votes becomes our model’s prediction.</p>
   <br>
-  <h3>PICTURE</h3>
+  <p>The reason we choose this model is that it contains a large number of relatively uncorrelated models (trees) operating as a committee, which will outperform any of the individual constituent models. These uncorrelated models can produce ensemble predictions that are more accurate than any of the individual predictions. The reason for this wonderful effect is that the trees protect each other from their individual errors.</p>
   <br>
-  <p>Where W1 is the weight matrix mapping the features to the hidden layer and W2 is the weight matrix mapping the output of the hidden layer to the final output. </p>
+  <div id="feature_importances" class="container-fluid bg-2 text-center" style="width: 680px; height: 400px;"></div>
+  <br>
+  <p>We used the three features with the highest importance to plot the following 3D graph.</p>
+  <br>
+  <div id="3d" class="container-fluid bg-2 text-center" style="width: 680px; height: 400px;"></div>
 </div>
 
-<script src=".\model.js"></script>  
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="..\RF_graph.js"></script>  
 
 </body>
 </html>

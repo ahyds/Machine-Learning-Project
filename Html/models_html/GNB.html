@@ -45,16 +45,6 @@ div.content {
   font-size:130%;
 }
 
-/* .content img{
-  position: relative;
-  left: 0;
-  right:0;
-  top: 0;
-  height: auto;
-  size:fit-content;
-  opacity:0.3;
-} */
-
 </style>
 
 
@@ -77,13 +67,13 @@ div.content {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="project.html">Our Project</a>
+        <a class="navbar-brand" href="../index.html">Our Project</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="viz.html">VISUALIZATION</a></li>
-          <li><a href="model.html">MACHINE LEARNING</a></li>
-          <li><a href="data.html">DATA</a></li>
+          <li><a href="../viz.html">VISUALIZATION</a></li>
+          <li><a href="models_overview.html">MACHINE LEARNING</a></li>
+          <li><a href="../data.html">DATA</a></li>
         </ul>
       </div>
     </div>
@@ -93,7 +83,8 @@ div.content {
 
 <!-- Second Container -->
 <div class="sidebar">
-  <a href="DT.html>">Decision Tree</a>
+  <a href="models_overview.html">Models Overview</a>  
+  <a href="DT.html">Decision Tree</a>
   <a href="RF.html">Random Forest</a>
   <a href="NN.html">Neural Network</a>
   <a href="KNN.html">K-Nearest Neighbors </a>
@@ -103,17 +94,14 @@ div.content {
 </div>
 
 <div class="content">
-  <!-- <div style="background-image: url('static/image/newsound.jpg');background-size:cover;"> -->
-  <!-- <img src="static/image/newsound.jpg"> -->
   <h2>Gaussian Naive Bayes (GaussianNB)</h2>
   <br>
   <p>The next algorithm we tried is Gaussian Naïve Bayes model, where we tried to learn our model from a given set of attributes (in training examples) and then form a hypothesis or a relation to a response variable. Then we use this relation to predict a response, given attributes of a new instance. Using the Bayes’ theorem, it’s possible to build a learner that predicts the probability of the response variable belonging to some class, given a new set of attributes.</p>
   <br>
   <p>GDA fits a probability distribution to positive and negative examples, and calculates the decision boundary that maximizes the logarithmic likelihood on the training set, using the following equations. </p>
-  <h3>PICTURE</h3>
 </div>
 
-<script src=".\model.js"></script>  
+<script src="../model.js"></script>  
 
 </body>
 </html>

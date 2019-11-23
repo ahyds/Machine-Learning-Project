@@ -6,15 +6,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Navbar -->
@@ -22,17 +21,17 @@
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <!-- <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> -->
         </button>
-        <a class="navbar-brand" href="project.html">Our Project</a>
+        <a class="navbar-brand" href="index.html">Our Project</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="viz.html">Visualization</a></li>
-          <li><a href="model.html">Machine Learning</a></li>
-          <li><a href="data.html">Data</a></li>
+          <li><a href="viz.html">VISUALIZATION</a></li>
+          <li><a href="models_html/models_overview.html">MACHINE LEARNING</a></li>
+          <li><a href="data.html">DATA</a></li>
         </ul>
       </div>
     </div>
@@ -40,24 +39,42 @@
 
 
 <!-- Second Container -->
-<div class="container-fluid text-center" id="block2">
-  <h3 class="margin">VISUALIZATION</h3>
-  <p>in one sentence:
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-</div>
+<div class="container">
+  <div class="row" style="margin: 20px;">
+    <div class="col-md-12">
+      <h1>Visualization</h1>
+      <h3>Datasets Exploration</h3>
+    </div>
+  </div>
 
-<div class="col-md-5">
-    <div id="bar"></div>
+  <div class="row" style="margin: 20px;">
+    <div class="col-md-6">
+      <h3>Radar Chart</h3>
+      <img src=# alt="radar">
+    </div>
+    <div class="col-md-6">
+      <h3>Tableau</h3>
+      <a href="https://public.tableau.com/profile/yidan7394#!/vizhome/DBKeyFeatures/DurationComparison?publish=yes"
+        target="blank">
+        <img src=static/image/tableau.jpeg alt="tableau link" width=600px></a>
+    </div>
+    <br>
+    <br>
+    <div class="col-md-12">
+        <h3>Highlights:</h3>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+    </div>
+  </div>
 </div>
+  
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src="./static/logic.js"></script>
+<script src="./static/logic.js"></script> -->
 
-<!-- Footer -->
-<footer class="container-fluid text-center" id="block5">
-  <p>DataBootcamp Project presented by Team SW</p> 
-</footer>   
 
 </body>
 </html>

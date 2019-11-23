@@ -45,16 +45,6 @@ div.content {
   font-size:130%;
 }
 
-/* .content img{
-  position: relative;
-  left: 0;
-  right:0;
-  top: 0;
-  height: auto;
-  size:fit-content;
-  opacity:0.3;
-} */
-
 </style>
 
 
@@ -77,13 +67,13 @@ div.content {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
         </button>
-        <a class="navbar-brand" href="index.html">Our Project</a>
+        <a class="navbar-brand" href="../index.html">Our Project</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="viz.html">VISUALIZATION</a></li>
-          <li><a href="model.html">MACHINE LEARNING</a></li>
-          <li><a href="data.html">DATA</a></li>
+          <li><a href="../viz.html">VISUALIZATION</a></li>
+          <li><a href="models_overview.html">MACHINE LEARNING</a></li>
+          <li><a href="../data.html">DATA</a></li>
         </ul>
       </div>
     </div>
@@ -93,28 +83,24 @@ div.content {
 
 <!-- Second Container -->
 <div class="sidebar">
+  <a href="models_overview.html">Models Overview</a> 
   <a href="DT.html">Decision Tree</a>
   <a href="RF.html">Random Forest</a>
   <a href="NN.html">Neural Network</a>
-  <a href="KNN.html">K-Nearest Neighbors </a>
+  <a class="active" href="KNN.html">K-Nearest Neighbors </a>
   <a href="GNB.html">Gaussian Naive Bayes </a>
   <a href="SVM.html">Support Vector Machines </a>
-  <a class="active" href="LR.html">Logistic Regression</a>
+  <a href="LR.html">Logistic Regression</a>
 </div>
 
 <div class="content">
-  <!-- <div style="background-image: url('static/image/newsound.jpg');background-size:cover;"> -->
-  <!-- <img src="static/image/newsound.jpg"> -->
-  <h2>Logistic Regression</h2>
+  <h2>K-Nearest Neighbors</h2>
   <br>
-  <p>Our final approach was to use the Logistic Regression algorithm with the labels of a randomly selected 20 percent of the examples. This algorithm assigns observations to a discrete set of classes. It transforms its output using the logistic sigmoid function to return a probability value which can then be mapped to two or more discrete classes.</p>
+  <p>We then used the K-Nearest Neighbors algorithm which works by finding the distances between a query and all the examples in the data, selecting the specified number examples (K) closest to the query, then votes for the most frequent label (in the case of classification) or averages the labels (in the case of regression).</p>
   <br>
-  <p>For each supervised learning algorithm, we split the data into training and validation examples using a 75/25 split. An additional test set was not needed. We tested the accuracy against both the training and validation labels. LR fits a decision boundary to the data. LR uses Newtons Method to maximise the logarithmic likelihood on the training set, with the following algorithm. </p>
-  <br>
-  <h3>PICTURE</h3>
 </div>
 
-<script src=".\model.js"></script>  
+<script src="../model.js"></script>  
 
 </body>
 </html>
